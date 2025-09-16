@@ -5,8 +5,8 @@ from typing import List
 
 
 def findMaxLength(nums: List[int]) -> int:
-     #Sliding window wont work here bc as soon as I widen the winnow I cant guarantee I'lll shrink back to balanced zeros and ones counts
-     #Sliding window only works when the condition is monotonic (strictly increase or decreasing) as the windows grows or shrinks
+    #Sliding window wont work here bc as soon as I widen the winnow I cant guarantee I'lll shrink back to balanced zeros and ones counts
+    #Sliding window only works when the condition is monotonic (strictly increase or decreasing) as the windows grows or shrinks
         #Examples of monotonic:
             #Window sum <= K : when we add an element and break the constraint we know we can safely shrink from the left until it holds again
             #Window has at most distinct K chars : can incrementally add/drop and maintain counts 

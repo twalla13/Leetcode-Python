@@ -17,7 +17,7 @@ def simplifyPath(path: str) -> str:
         # '..' means go up one directory, so pop the top of the stack if it's not empty.
         elif c == "..":
             if stack: 
-                 stack.pop()
+                stack.pop()
         # Valid directory name – push onto the stack (LIFO) to track the path hierarchy.
         else:
             stack.append(c)
